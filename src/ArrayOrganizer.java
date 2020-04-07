@@ -7,8 +7,11 @@ public class ArrayOrganizer {
         ArrayList<Integer> result = new ArrayList<>();
         result.addAll(list1);
         result.addAll(list2);
+
         result.addAll(list3);
         Collections.sort(result);
+
+        Collections.sort(result, Collections.reverseOrder());
         return result;
     }
 
